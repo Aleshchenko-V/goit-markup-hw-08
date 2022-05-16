@@ -1,0 +1,38 @@
+.card-set {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-set__item {
+  width: 270px;
+  @extend %list;
+  & + & {
+    margin-left: 30px;
+  }
+}
+
+.card-set__card {
+  display: flex;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-set__title {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.card-set__description {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $secondary-text-color;
+}
